@@ -12,6 +12,12 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
+    .js('resources/assets/assets/js/demo.js', 'public/assets/assets/js')
+    .postCss('resources/assets/assets/css/bootstrap.min.css', 'public/assets/assets/css')
+    .postCss('resources/assets/assets/css/animate.min.css', 'public/assets/assets/css')
+    .postCss('resources/assets/assets/css/light-bootstrap-dashboard.css', 'public/assets/assets/css')
+    .postCss('resources/assets/assets/css/pe-icon-7-stroke.css', 'public/assets/assets/css')
     .postCss('resources/css/app.css', 'public/css', [
         //
+
     ]);
